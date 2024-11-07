@@ -1,10 +1,10 @@
 p{
-    color: blueviolet;
+    color: rgb(136, 9, 9);
     font-size: 20px;
 }
 
 h1{
-    color: green;
+    color: brown;
     font-size: 35px;
 }
 h2{
@@ -14,4 +14,18 @@ h2{
 h3{
     color: orangered;
     font-size: 25px;
+}
+
+label {
+    color:brown;
+    font-size: 28px;
+    
+}
+
+
+
+
+textarea{
+
+    font-size: 35px;
 }
