@@ -29,3 +29,25 @@ textarea{
 
     font-size: 35px;
 }
+
+/*Cajas con diferentes estilos */
+
+.box{
+    width: 200px;
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.red-box{
+    background-color: lightcoral;
+}
+
+.blue-box{
+    background-color: lightblue;
+}
+
+.green-box{
+    background-color: lightgreen;
+}
