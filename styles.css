@@ -51,3 +51,48 @@ textarea{
 .green-box{
     background-color: lightgreen;
 }
+
+
+
+/*Barra de navegación fija */
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    z-index: 1000; /*aparece por encima del contenido */
+
+}
+.container{
+
+    position: relative;
+    margin-top: 60px;/*para evitar que el contenido se superponga a la barra*/
+
+}
+.box1{
+
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    z-index: 1000; /*aparece por encima del contenido */
+
+}
+
+.box2{
+
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 200px;
+    height:100px;
+    background-color: lightcoral;
+    z-index: 1000; /*aparece por encima de la caja con z-index 1 */
+
+}
