@@ -96,3 +96,31 @@ nav{
     z-index: 1000; /*aparece por encima de la caja con z-index 1 */
 
 }
+.contenedorflex{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+}
+
+.item{
+     margin:20px;
+     padding: 50px;
+     border: 1px solid;
+     color: red ;
+
+}
+
+#a{
+  border: yellow;
+
+}
+
+#b{
+  border: pink;  
+}
+
+#c{
+    border: green 10px dotted;
+}
+    
+    
