@@ -151,17 +151,31 @@
 </head>
 <body>
     <!-- Encabezado -->
-    <header>
-        <img src="logo-mendoza.png" alt="Mendoza Shopping Logo">
-    </header>
-
-    <!-- Navegación -->
-    <nav>
-        <a href="#categorias">Categorías</a>
-        <a href="#promociones">Promociones</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-
+    <nav class="navbar">
+        <div class="logo">
+          <img src="logo.png" alt="Logo">
+          <span>My Website</span>
+        </div>
+        <div class="icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="hamburger">
+          <i class="fa fa-bars"></i>
+        </div>
+      </nav>
+      
+      <!-- Font Awesome for Icons -->
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <script>
+        const hamburger = document.querySelector('.hamburger');
+        const icons = document.querySelector('.icons');
+      
+        hamburger.addEventListener('click', () => {
+          icons.style.display = icons.style.display === 'flex' ? 'none' : 'flex';
+        });
+      </script>
     <!-- Hero Section -->
     <section class="hero">
         <h1>¡Todo está acá!</h1>
