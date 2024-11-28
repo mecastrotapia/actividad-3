@@ -3,75 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "nav main"
+                "footer footer";
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr 3fr;
+            gap: 10px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #b0e0e6;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #add8e6;
+            padding: 20px;
+        }
+
+        main {
+            grid-area: main;
+            background-color: #e6f7ff;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        article,
+        video,
+        img {
+            background-color: #c1f0f6;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #add8e6;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #b0e0e6;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <header id="a">
-
-      <h1>Titulo 1</h1>
-
-      
-    </header>
-    
-    <main id="b">
-
-      <section>
-        <article>
-          <div>
-           <h2>Titulo 2</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Tempora aperiam neque porro provident quae, sunt harum sint 
-                at magnam earum consequuntur similique asperiores rerum numquam 
-                placeat eligendi. Repudiandae, dicta consequatur?</p>
-          </div>
-        </article>
-
-        <div class="contenedorflex">
-            <div class="item">
-              <h1>Item 1</h1> 
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Minima cupiditate dolorem et exercitationem veritatis nam, 
-                unde incidunt velit ab illo sequi, omnis ipsa quidem molestiae. 
-                Nesciunt minus fuga porro magnam.</p>
-
-            </div>
-            <div class="item">
-              <h1>Item 2</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Minima cupiditate dolorem et exercitationem veritatis nam, 
-                unde incidunt velit ab illo sequi, omnis ipsa quidem molestiae. 
-                Nesciunt minus fuga porro magnam.</p>
-
-            </div> 
-            <div class="item">
-              <h1>Item 1</h1> 
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Minima cupiditate dolorem et exercitationem veritatis nam, 
-                unde incidunt velit ab illo sequi, omnis ipsa quidem molestiae. 
-                Nesciunt minus fuga porro magnam.</p>
-        </div>
-      </section>
-       
-    
-    <aside id="c">
-      <article>
-        
-      <div>
-
-         <h3>Titulo 3</h3>
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-            Quia quo commodi repellendus obcaecati exercitationem eaque 
-            ab eius dignissimos saepe ipsa reiciendis libero ipsam, 
-            repellat excepturi esse, velit quis quas vitae?</p>
-
-      </div>
-    </article>
-    
-   </aside>
-   </main>
-    <footer>
-        <p>&copy;2024 Sitio Web.</p>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>Encabezado</h1>
+        </header>
+        <nav>
+            <p>Navegación</p>
+        </nav>
+        <main>
+            <article>
+                <p>Artículo</p>
+            </article>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+            <img src="Mela.svg" alt="Gráfico SVG">
+        </main>
+        <footer>
+            <p>Pie de página</p>
+        </footer>
+    </div>
 </body>
 </html>
